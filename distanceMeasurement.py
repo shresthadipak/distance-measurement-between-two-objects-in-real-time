@@ -1,4 +1,5 @@
 import cv2
+from objectDetectionModule import objectDetector
 
 cap = cv2.VideoCapture(0)
 
@@ -8,10 +9,15 @@ while True:
     if not ret:
         break
 
-    cv2.imshow("Distance Measurement", frame)
+    detector = objectDetector()
+
+    detect_img = detector.object_detect(frame)
+
+    cv2.imshow("Object Detection", detect_img)
 
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
 
 cap.release()
-cv2.destroyAllWindows()    
+cv2.destroyAllWindows()
+
