@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 yolov3_weights = "YOLOv3_model/yolov3.weights"
 yolov3_cfg = "YOLOv3_model/yolov3.cfg"
@@ -76,6 +77,8 @@ class objectDetector():
                     width_p = w
                     height_p = int(h/2)
 
+                    # print(w, h)
+
                     # # pull bbox coordinate points
                     x0 = x
                     y0 = y
@@ -88,7 +91,7 @@ class objectDetector():
                     person_y_min = int(y0)
                     person_y_max = int(y1)
 
-                    pixels_to_inches = width_p/height_person
+                    pixels_to_inches = h/height_person
                     pixels_ratio_array.append(pixels_to_inches)
 
                 if label == 'dog':
@@ -96,7 +99,7 @@ class objectDetector():
                     width_d = w
                     height_d = int(h/2)
 
-                    pixels_to_inches = width_d/height_dog
+                    pixels_to_inches = h/height_dog
                     pixels_ratio_array.append(pixels_to_inches)
 
                     # pull bbox coordinate points
@@ -123,7 +126,12 @@ class objectDetector():
         # print(str(x_calc_3))
         # print(str(x_calc_4))
 
+        # print (math.sqrt((person_x_min - dog_x_max)**2 + (person_y_min - dog_y_max)**2))
+
         min_pixel_distance = min(x_calc_1, x_calc_2, x_calc_3, x_calc_4)
+        # print(min_pixel_distance)
+        # print(pixel_to_inches)
+        # print(pixels_ratio_array)
 
         if x_calc_1 == min_pixel_distance:
                 

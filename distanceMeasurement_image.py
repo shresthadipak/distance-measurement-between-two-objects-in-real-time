@@ -2,7 +2,7 @@ import cv2
 from objectDetectionModule import objectDetector
 
 
-img = cv2.imread('images/image4.jpg')
+img = cv2.imread('images/image6.jpg')
 
 h, w, _ = img.shape
 
