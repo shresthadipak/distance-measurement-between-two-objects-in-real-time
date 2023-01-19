@@ -185,6 +185,6 @@ class objectDetector():
             cv2.circle(img, distance_end_point, 5, (0, 0, 255), -1)
             cv2.line(img, distance_start_point, distance_end_point, distance_color, distance_thickness)
 
-            cv2.putText(img, "~" + str(estimated_distance_inches) + "in.", distance_text_point, font, font_scale, font_color, font_thickness, cv2.LINE_AA)    
+            cv2.putText(img, "~" + str(estimated_distance_inches) + " in.", distance_text_point, font, font_scale, font_color, font_thickness, cv2.LINE_AA)    
 
         return img

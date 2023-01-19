@@ -3,7 +3,7 @@ Measuring the distance between two objects using Pythagorean Theorem and OpenCV
 
 # Output 
 Distance between two objects i.e. Person and Dog
-1. [First Output](/output/OutPut1.png)
+1. [First Output](/output/output1.png)
 2. [Second Output](/output/output2.png)
 
 # License
