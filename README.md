@@ -1,2 +1,10 @@
-# Distance Measurement Real Object from Camera
-Measuring the distance from camera to real object by knowing real size of an object using openCV
+# Distance Measurement between two Objects
+Measuring the distance between two objects using Pythagorean Theorem and OpenCV
+
+# Output 
+Distance between two objects i.e. Person and Dog
+1. [First Output](/output/OutPut1.png) 
+2. [Second Output](/output/output2.png)
+
+# License
+The MIT License (MIT). Please see [License File](/LICENSE) for more information.
