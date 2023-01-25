@@ -10,5 +10,8 @@ Distance between two objects i.e. Person and Dog
 2. [Image Second Output](/output/output2.png)
 3. [Video Output](/output/output3.avi)
 
+# References
+1. [Measure Distance in Photos and Videos Using Computer Vision](https://blog.roboflow.com/computer-vision-measure-distance/)
+
 # License
 The MIT License (MIT). Please see [License File](/LICENSE) for more information.
