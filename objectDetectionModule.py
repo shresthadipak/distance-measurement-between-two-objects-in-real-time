@@ -1,7 +1,5 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
-import math
 
 yolov3_weights = "YOLOv3_model/yolov3.weights"
 yolov3_cfg = "YOLOv3_model/yolov3.cfg"

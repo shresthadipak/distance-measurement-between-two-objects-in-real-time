@@ -6,6 +6,11 @@ Measuring the distance between two objects using Pythagorean Theorem and OpenCV.
 ## Download the YOLOv3 Model
 [Download file](https://pjreddie.com/media/files/yolov3.weights) and save it into YOLOv3_model folder.
 
+## Libraries
+    import cv2
+    import numpy as np
+    from scipy.spatial import distance
+
 ## Calculating Distance Between Points using Pythagoras
 ![This is an image](/images/Pythagorean-Theorem-Calculator-2.jpg)
 
